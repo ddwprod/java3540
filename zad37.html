@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Sprawdzenie znajomości roku JavaScript</title>
+    <script>
+        function checkYear() {
+            var input = prompt("Podaj rok, od którego działa JavaScript", "");
+            var year = parseInt(input);
+
+            if (year === 1995) {
+                document.write('<h1 style="color: blue; font-size: 4;">Brawo, znasz rok od kiedy działa JavaScript</h1><br />');
+            } else {
+                document.write('<h1 style="color: red; font-size: 7;">Źle, musisz jeszcze poczytać</h1><br />');
+            }
+
+            document.write('<p>Wczytany rok = ' + year + '</p>');
+        }
+    </script>
+</head>
+<body>
+
+<input type="button" name="sprawdz" value="Sprawdź" onclick="checkYear()">
+
+
+
+</body></html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Zadanie 36</title>
+    <script>
+        function checkColor() {
+            var input = prompt("Podaj kolor", "");
+            var color = input.toLowerCase();
+
+            if (color === "czerwony" || color === "1") {
+                document.write('<h1 style="color: red; font-size: 40px;">wczytałeś kolor czerwony</h1><br />');
+            } else if (color === "niebieski" || color === "2") {
+                document.write('<h1 style="color: blue; font-size: 40px;">wczytałeś kolor niebieski</h1><br />');
+            } else {
+                document.write('<h1>Nieprawidłowy kolor</h1><br />');
+            }
+        }
+    </script>
+</head>
+<body>
+
+<h1 style="color: green;">MENU:</h1>
+<h2 style="color: red;">1-CZERWONY</h2>
+<h2 style="color: blue;">2-NIEBIESKI</h2>
+
+<input type="button" name="nazwisko_ucznia" value="Oblicz" onclick="checkColor()">
+
+
+
+</body></html>
